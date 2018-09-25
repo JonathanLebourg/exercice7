@@ -8,9 +8,11 @@
 
 <body>
 
-<p> Votre identité</p>
+
 
   <form method=post>
+    <fieldset>
+      <legend>Votre identité</legend>
 <p>
   <label>1. Nom:</label>
   <input type="text" name="Nom" placeholder="Nom">
@@ -23,14 +25,19 @@
   <label>3. Adresse mail:</label>
   <input type="text" name="Mail" placeholder="Adresse mail">
 </p>
+</fieldset>
 </form>
 
-<p>Adresse de livraison</p>
+
 
 <form method=post>
+
+    <fieldset>
+  <legend>Adresse de livraison</legend>
+
 <p>
   <label>1. Adresse:</label>
-  <input type="text" name="Adresse" >
+  <textarea name="Adresse"> </textarea>
 </p>
 <p>
   <label>2. Code postal:</label>
@@ -40,7 +47,35 @@
   <label>3. Ville:</label>
   <input type="text" name="Ville" placeholder="Ville">
 </p>
+</fieldset>
 </form>
+
+
+
+<form method=post>
+    <fieldset>
+    <legend>Informations de règlement</legend>
+<p>1. Type de carte bancaire: </p>
+  <input type="radio" name="payement" value="VISA" id="VISA" /><label for="VISA">VISA</label></br>
+  <input type="radio" name="payement" value="Mastercard" id="Mastercard" /><label for="Mastercard">Mastercard</label></br>
+  <p>
+    <label>2. Numéro de carte:</label>
+    <input type="text" name="Numéro de carte" placeholder="Numéro de carte">
+  </p>
+  <p>
+    <label>3. Code de sécurité:</label>
+    <input type="text" name="Code de sécurité" placeholder="Code de sécurité">
+  </p>
+  <p>
+    <label>4 Nom du titulaire:</label>
+    <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire">
+  </p>
+</fieldset>
+  </form>
+
+
+<input type="submit" value="J'achète!">
+
 
 
 </body>
